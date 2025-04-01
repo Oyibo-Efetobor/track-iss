@@ -2,13 +2,13 @@ import requests
 from datetime import *
 import smtplib
 
-email = 'efetobor3x@gmail.com'
-email_password = 'tkgukoemvqbclbfc'
+email = ''#hidden
+email_password = ''#hidden
 
 time_now = datetime.now()
 
-my_lat = 8.140670
-my_long = 5.102050
+my_lat = 89.140670
+my_long = 75.102050
 
 
 
@@ -61,7 +61,7 @@ def send_iss_email():
         # Send the email
         connection.sendmail(
             from_addr=email,
-            to_addrs='efetobor3x@proton.me',
+            to_addrs='user_1@proton.me',
             msg="Check The ISS is above your area "
         )
         
